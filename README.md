@@ -140,7 +140,7 @@ Axios API Requests
 Full-Stack Application Development
 Author
 
-Abdulrahman Inuwa
+Abdulrahman Musa Inuwa
 
 Data Scientist
 Full-Stack Developer
