@@ -1,16 +1,148 @@
-# React + Vite
+Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack Task Manager application built with the MERN stack (MongoDB, Express.js, React, and Node.js). This application allows users to create, manage, update, and delete tasks efficiently through a clean and responsive user interface.
 
-Currently, two official plugins are available:
+Features
+Create new tasks
+View all tasks
+Update task completion status
+Delete tasks
+RESTful API integration
+JWT Authentication support
+Axios API handling
+Responsive React frontend
+MongoDB database integration
+Tech Stack
+Frontend
+React.js
+Vite
+Axios
+CSS
+Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+JWT Authentication
+Project Structure
+task-manager/
+│
+├── task-manager-frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+├── task-manager-backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
+Installation
+Clone the Repository
+git clone https://github.com/your-username/task-manager.git
+Backend Setup
+Navigate to Backend Folder
+cd task-manager-backend
+Install Dependencies
+npm install
+Create .env File
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+Start Backend Server
+npm start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Server runs on:
 
-## React Compiler
+http://localhost:5000
+Frontend Setup
+Navigate to Frontend Folder
+cd task-manager-frontend
+Install Dependencies
+npm install
+Start Frontend
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend runs on:
 
-## Expanding the ESLint configuration
+http://localhost:5173
+API Endpoints
+Authentication
+Method	Endpoint	Description
+POST	/api/auth/login	User login
+Tasks
+Method	Endpoint	Description
+GET	/api/tasks	Get all tasks
+POST	/api/tasks	Create task
+PUT	/api/tasks/:id	Update task
+DELETE	/api/tasks/:id	Delete task
+Example Task Object
+{
+  "_id": "123456",
+  "title": "Complete MERN project",
+  "description": "Finish Task Manager application",
+  "completed": false
+}
+Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Add screenshots of:
+
+Dashboard
+Task Creation
+Task List
+Authentication Page
+Future Improvements
+User registration
+Task categories
+Due dates
+Drag-and-drop task management
+Real-time updates with Socket.IO
+Dark mode
+Mobile responsiveness improvements
+Deployment to AWS/Vercel/Render
+Deployment
+
+Frontend can be deployed on:
+
+Vercel
+Netlify
+
+Backend can be deployed on:
+
+Render
+Railway
+AWS
+DigitalOcean
+
+Database:
+
+MongoDB Atlas
+Learning Outcomes
+
+This project demonstrates understanding of:
+
+React Hooks
+Component Architecture
+REST APIs
+Express Middleware
+MongoDB CRUD Operations
+Authentication with JWT
+State Management
+Axios API Requests
+Full-Stack Application Development
+Author
+
+Abdulrahman Inuwa
+
+Data Scientist
+Full-Stack Developer
+Blockchain Professional
+Machine Learning Engineer
